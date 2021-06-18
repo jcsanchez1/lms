@@ -20,6 +20,9 @@
         <property name="mappings">
             <props>
                 <prop key="index.htm">indexController</prop>
+                <prop key="reg-index.htm">reg-index</prop>
+                <prop key="alu-index.htm">alu-index</prop>
+                <prop key="mas-index.htm">mas-index</prop>
             </props>
         </property>
     </bean>
@@ -35,5 +38,8 @@
     <bean name="indexController"
           class="org.springframework.web.servlet.mvc.ParameterizableViewController"
           p:viewName="index" />
+    <bean name="reg-index" class="org.springframework.web.servlet.mvc.ParameterizableViewController" p:viewName="reg-index"/>
+    <bean name="alu-index" class="org.springframework.web.servlet.mvc.ParameterizableViewController" p:viewName="alu-index"/>
+    <bean name="mas-index" class="org.springframework.web.servlet.mvc.ParameterizableViewController" p:viewName="mas-index"/>
 
 </beans>
